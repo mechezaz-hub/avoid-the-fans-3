@@ -11,10 +11,12 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`instrument1`, function (sprit
     tiles.setTileAt(location, assets.tile`transparency16`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`fan2`, function (sprite, location) {
+    info.changeCountdownBy(-60)
     info.changeScoreBy(-48)
     tiles.setTileAt(location, assets.tile`transparency16`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`fan1`, function (sprite, location) {
+    info.changeCountdownBy(-60)
     info.changeScoreBy(-48)
     tiles.setTileAt(location, assets.tile`transparency16`)
 })
@@ -23,6 +25,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`instrument0`, function (sprit
     tiles.setTileAt(location, assets.tile`transparency16`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`fan3`, function (sprite, location) {
+    info.changeCountdownBy(-60)
     info.changeScoreBy(-48)
     tiles.setTileAt(location, assets.tile`transparency16`)
 })
